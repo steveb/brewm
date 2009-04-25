@@ -3,6 +3,9 @@
   <requires lib="gtk+" version="2.16"/>
   <!-- interface-naming-policy toplevel-contextual -->
   <object class="GtkWindow" id="window">
+    <property name="default_width">800</property>
+    <property name="default_height">600</property>
+    <signal name="destroy" handler="on_window_destroy"/>
     <child>
       <object class="GtkVBox" id="mainVbox">
         <property name="visible">True</property>
@@ -154,8 +157,6 @@
         </child>
         <child>
           <object class="GtkScrolledWindow" id="mainScrolledWindow">
-            <property name="width_request">800</property>
-            <property name="height_request">600</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="hscrollbar_policy">automatic</property>
@@ -374,7 +375,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                                 <property name="numeric">True</property>
                               </object>
                               <packing>
@@ -457,7 +457,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                               </object>
                               <packing>
                                 <property name="left_attach">3</property>
@@ -471,7 +470,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                               </object>
                               <packing>
                                 <property name="left_attach">3</property>
@@ -607,7 +605,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                               </object>
                               <packing>
                                 <property name="left_attach">5</property>
@@ -621,7 +618,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                               </object>
                               <packing>
                                 <property name="left_attach">3</property>
@@ -635,7 +631,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                               </object>
                               <packing>
                                 <property name="left_attach">3</property>
@@ -649,7 +644,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                               </object>
                               <packing>
                                 <property name="left_attach">5</property>
@@ -663,7 +657,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                               </object>
                               <packing>
                                 <property name="left_attach">3</property>
@@ -677,7 +670,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                                 <property name="digits">2</property>
                               </object>
                               <packing>
@@ -692,7 +684,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                               </object>
                               <packing>
                                 <property name="left_attach">3</property>
@@ -1149,7 +1140,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                               </object>
                               <packing>
                                 <property name="left_attach">3</property>
@@ -1163,7 +1153,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                               </object>
                               <packing>
                                 <property name="left_attach">3</property>
@@ -1177,7 +1166,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                               </object>
                               <packing>
                                 <property name="left_attach">3</property>
@@ -1191,7 +1179,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                               </object>
                               <packing>
                                 <property name="left_attach">3</property>
@@ -1205,7 +1192,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                               </object>
                               <packing>
                                 <property name="left_attach">3</property>
@@ -1219,7 +1205,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                               </object>
                               <packing>
                                 <property name="left_attach">3</property>
@@ -1233,7 +1218,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                               </object>
                               <packing>
                                 <property name="left_attach">3</property>
@@ -1247,7 +1231,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                               </object>
                               <packing>
                                 <property name="left_attach">3</property>
@@ -1413,7 +1396,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                               </object>
                               <packing>
                                 <property name="left_attach">1</property>
@@ -1427,7 +1409,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                               </object>
                               <packing>
                                 <property name="left_attach">1</property>
@@ -1441,7 +1422,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                               </object>
                               <packing>
                                 <property name="left_attach">1</property>
@@ -1455,7 +1435,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                               </object>
                               <packing>
                                 <property name="left_attach">1</property>
@@ -1469,7 +1448,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                               </object>
                               <packing>
                                 <property name="left_attach">1</property>
@@ -1483,7 +1461,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                               </object>
                               <packing>
                                 <property name="left_attach">1</property>
@@ -1497,7 +1474,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                               </object>
                               <packing>
                                 <property name="left_attach">1</property>
@@ -1511,7 +1487,6 @@
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="invisible_char">&#x25CF;</property>
-                                <property name="adjustment"></property>
                               </object>
                               <packing>
                                 <property name="left_attach">1</property>
